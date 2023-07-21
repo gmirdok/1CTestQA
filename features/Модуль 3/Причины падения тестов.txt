@@ -1,0 +1,35 @@
+1. Empty snippet address of the step:
+	message when trying to re-create Purchase order/Inventory transfer order based on Internal supply request
+
+Отсутствует обработчик для шага.
+ 
+
+2. Error calling context method (BeginPutFileToServer) {Catalog.Extensions.Form.ItemForm.Form(25)}:BeginPutFileToServer(EndCall, ProgressCall, BeforeStartCall, , PutFilesDialogParameters, ThisObject.UUID); , reason: File not found 'C:\BuildAgentThree\work\161527a3295c878a\DataProcessor\IRP_AdditionalFunctionality.cfe'. 2(0x00000002): The system cannot find the file specified.
+
+Не найден файл.
+ 
+3. Error calling context method (StartChoosing):
+ 	filling in Package unit when create new item
+
+Для заполнения поля "Package unit" нужно предварительно сохранить объект.
+ 
+4. Expected <The total amount of the "Cash transfer order" document(s) is already received on the basis of the "Bank receipt" document(s).> substring in user messages
+	check message output in case the user tries to create Bank receipt again by Cash transfer order
+
+Отсутствует ожидаемое сообщение.
+ 
+5. Form table named <PaymentList> is not found.
+ 	currency exchange within one Cash/Bank accounts with exchange in parts (exchange rate has decreased)
+
+Не найдена табличная часть с именем "PaymentList".
+ 
+6. One or more standard table lines are not found in the
+ 	create Cash transfer order (from Cash/Bank accounts to bank account in the same currency)
+
+В таблице "PaymentList" отсутствует искомая строка :
+	Amount	Planning transaction basis
+	500,00	Cash transfer order 3 dated 24.05.2022 12:47:35
+ 
+7. Unable to move to the required line in <List> table.
+
+Отсутствует искомая строка ( Description = "Workstation 01" ) в списке.
